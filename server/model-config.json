@@ -12,5 +12,13 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "Task": {
+    "dataSource": null,
+    "public": true
+  },
+  "Author": {
+    "dataSource": null,
+    "public": true
   }
 }
