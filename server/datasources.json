@@ -1,12 +1,12 @@
 {
-  "postgresDS": {
-    "host": "",
+  "tmdemodb": {
+    "host": "localhost",
     "port": 5432,
     "url": "",
-    "database": "tmDemo",
-    "password": "1234",
-    "name": "postgresDS",
-    "user": "tmDemo",
+    "database": "tmdemo",
+    "password": "381577",
+    "name": "tmdemodb",
+    "user": "postgres",
     "connector": "postgresql"
   }
 }
