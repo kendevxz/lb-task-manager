@@ -17,14 +17,24 @@
     "status": {
       "type": "string",
       "default": "todo",
-      "enum": ["todo", "in-progress", "completed"]
+      "enum": [
+        "todo",
+        "in-progress",
+        "completed"
+      ]
     },
     "dueDate": {
       "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
