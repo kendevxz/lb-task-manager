@@ -7,6 +7,9 @@
     "validateUpsert": true,
     "autoupdate": true
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "title": {
       "type": "string",
