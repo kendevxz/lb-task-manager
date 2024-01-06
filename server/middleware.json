@@ -1,9 +1,9 @@
 {
   "initial:before": {
+    "./middleware/log-request": {},
     "loopback#favicon": {}
   },
   "initial": {
-    "./middleware/log-request": {},
     "compression": {},
     "helmet#xssFilter": {},
     "helmet#frameguard": {

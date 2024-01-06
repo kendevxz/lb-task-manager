@@ -1,10 +1,11 @@
 {
   "name": "Author",
-  "plural": "Authors",
-  "base": "Model",
+  "plural": "authors",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "autoupdate": true
   },
   "properties": {
     "name": {
@@ -13,13 +14,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "tasks": {
-      "type": "hasMany",
-      "model": "Task",
-      "foreignKey": "authorId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

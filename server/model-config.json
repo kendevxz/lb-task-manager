@@ -14,11 +14,11 @@
     ]
   },
   "Task": {
-    "dataSource": null,
+    "dataSource": "tmdemo",
     "public": true
   },
   "Author": {
-    "dataSource": null,
+    "dataSource": "tmdemo",
     "public": true
   }
 }

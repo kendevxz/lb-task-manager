@@ -1,10 +1,11 @@
 {
   "name": "Task",
-  "plural": "Tasks",
-  "base": "Model",
+  "plural": "tasks",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "autoupdate": true
   },
   "properties": {
     "title": {
@@ -16,9 +17,9 @@
     },
     "status": {
       "type": "string",
-      "default": "todo",
+      "default": "to-do",
       "enum": [
-        "todo",
+        "to-do",
         "in-progress",
         "completed"
       ]
@@ -28,13 +29,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "author": {
-      "type": "belongsTo",
-      "model": "Author",
-      "foreignKey": "authorId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -1,6 +1,8 @@
+'use strict';
+
 module.exports = function() {
   return function(req, res, next) {
-    console.log('Received request:', req.method, req.url);
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
   };
 };
