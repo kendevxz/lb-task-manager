@@ -7,8 +7,16 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+var cors = require('cors');
 
 const app = module.exports = loopback();
+
+app.use(cors({
+  origin: 'http://localhost:4200',  // Allow requests from this origin
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,  // Enable credentials (e.g., cookies, HTTP authentication)
+  optionsSuccessStatus: 204,  // Set the preflight response status code
+}));
 
 app.start = function() {
   // start the web server

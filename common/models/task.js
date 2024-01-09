@@ -50,7 +50,7 @@ module.exports = function(Task) {
 
   Task.remoteMethod('getTasks', {
     returns: {arg: 'tasks', type: 'array'},
-    http: {verb: 'get', path: '/getTasks'},
+    http: {verb: 'get', path: '/tasks'},
   });
 
   Task.remoteMethod('getTaskById', {
