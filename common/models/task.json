@@ -32,7 +32,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -14,7 +14,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "authorId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
